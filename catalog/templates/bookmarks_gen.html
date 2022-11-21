@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+
+  {% block title %}<title>Bookmarks</title>{% endblock %}
+
+{% block style %}
+{% include "styles.html" %}
+{% include "style_book.html" %}
+
+{% endblock style %}
+  <!-- Add additional CSS in static file -->
+
+</head>
+<header>
+	<div class="overlay">
+<h1>Go For A Walk</h1>
+<h3>Reasons for Choosing US</h3>
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab.</p>
+	<br>
+	<button>READ MORE</button>
+		</div>
+</header>
+{% block header %}
+{% include "menu.html" %}
+{% endblock header %}
+<html>
+<body>
+<div class="mp-container">
+<br><br>
+<iframe class="map"src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d92929.54349008766!2d-2.950561704438025!3d43.29231156682931!3m2!1i1024!2i768!4f13.1!2m1!1smaps%20aparcamiento%20minusvalido%20en%20bizkaia!5e0!3m2!1ses!2ses!4v1668897834319!5m2!1ses!2ses" width="1850" height="400" style="border:0;" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</body>
+</html>
+{% block footer %}
+{% include "pie.html" %}
+
+{% endblock footer %}
