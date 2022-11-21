@@ -23,7 +23,7 @@ import catalog.views
 from django.views.generic import TemplateView
 #push
 
-
+from django.urls import re_path as url 
 
 from fcm_django.api.rest_framework import FCMDeviceAuthorizedViewSet
 from rest_framework.routers import DefaultRouter
