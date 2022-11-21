@@ -28,9 +28,9 @@ with open(os.path.join(BASE_DIR,'goforawalk', 'secret_key.txt')) as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
+DEBUG = False
 
-ALLOWED_HOSTS = [
+ALLOWED_HOSTS = ['agile-woodland-63733.herokuapp.com/', '127.0.0.1'
 
 ]
 
