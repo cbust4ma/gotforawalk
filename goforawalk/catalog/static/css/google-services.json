@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "144039055480",
+    "project_id": "gofor-fa292",
+    "storage_bucket": "gofor-fa292.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144039055480:android:17a57a9efd374303b7dd8d",
+        "android_client_info": {
+          "package_name": "com.goforawalk.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144039055480-lbhvp1pokf5cgd1emd0au5l2mb4gbldd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKJq7fvPcL3fEg2v5MNys5d2bafS0iZmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144039055480-lbhvp1pokf5cgd1emd0au5l2mb4gbldd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
