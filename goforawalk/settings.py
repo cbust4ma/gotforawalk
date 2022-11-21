@@ -15,6 +15,12 @@ from pathlib import Path
 import os
 import dj_database_url
 import django_heroku
+import environ
+from django.core.management.utils import get_random_secret_key
+environ.Env.read_env()
+# I replaced the secret key line with this
+a = get_random_secret_key()
+SECRET_KEY = os.getenv(a, 'Optional default value')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -231,3 +237,4 @@ print (cred)
 firebase_admin.initialize_app(cred)
 
 django_heroku.settings(locals(), staticfiles=False)
+
