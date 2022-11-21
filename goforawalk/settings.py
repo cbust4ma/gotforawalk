@@ -13,6 +13,8 @@ from firebase_admin import initialize_app
 
 from pathlib import Path
 import os
+import dj_database_url
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -227,3 +229,4 @@ from firebase_admin.messaging import Message
 cred = credentials.Certificate(os.path.join(BASE_DIR,'catalog', 'static','css','cert.json'))
 print (cred)
 firebase_admin.initialize_app(cred)
+django_heroku.settings(locals())
