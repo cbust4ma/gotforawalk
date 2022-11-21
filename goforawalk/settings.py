@@ -229,4 +229,5 @@ from firebase_admin.messaging import Message
 cred = credentials.Certificate(os.path.join(BASE_DIR,'catalog', 'static','css','cert.json'))
 print (cred)
 firebase_admin.initialize_app(cred)
-django_heroku.settings(locals())
+
+django_heroku.settings(locals(), staticfiles=False)
